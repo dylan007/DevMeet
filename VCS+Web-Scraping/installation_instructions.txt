@@ -1,0 +1,19 @@
+Windows
+Python 3.5
+
+    Installing Python 3.5.4
+
+    1. Run python-3.5.4-amd64.exe file.
+    2. Check the ' Add to Path' option
+    3. Click on "Install Now"
+    4. Python will start installing. When so see a message "Setup was succesful"  ,click on close
+    5. Open command prompt
+    6. Type python3 --version
+
+    If you see a messages like "Python 3.5.4" , python is installed and working
+
+
+    Installing BeautifulSoup4
+
+    1. Open commmand promt
+    2. enter 'pip3 install bs4'
