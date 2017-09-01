@@ -18,7 +18,7 @@ page = requests.get(url_to_get).content
 soup = BeautifulSoup(page , "html.parser")
 
 ## Finding div element with id 'comic'
-ImageDiv = soup.find_all("div")
+ImageDiv = soup.find("div",{"id":"comic"})
 
 ## Extracting image url from dictionary
 comicImageTag = ImageDiv.find("img")
