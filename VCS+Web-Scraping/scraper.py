@@ -6,6 +6,7 @@ import requests
 url = "https://xkcd.com/"
 
 ## Taking user input for comic number to scrape
+print("Enter Comic Number")
 n = int(input())
 
 ## Generating URL for comicUrl
@@ -25,8 +26,12 @@ comicImageTag = ImageDiv.find("img")
 comicUrl = comicImageTag['src']
 
 ## Printing image url
-print("https:" + comicUrl)
+print("The image URL is https:" + comicUrl)
+
+## Creating a string for filename
+filename = "comic" + str(n) + comicUrl[-4:len(comicUrl)]
 
 ## Downloading imahe using urllib
-filename = "comic" + str(n) + ".jpg"
 urllib.request.urlretrieve("https:" + comicUrl , filename)
+
+print("Saved file as " + filename)
