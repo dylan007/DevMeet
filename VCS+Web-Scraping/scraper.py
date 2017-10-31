@@ -25,7 +25,7 @@ ImageDiv = soup.find("div",{"id":"comic"})
 
 ## Extracting image url from dictionary
 comicImageTag = ImageDiv.find("img")
-comicUrl = comicImageTag['src']
+comicUrl = comicImageTag["src"]
 
 ## Printing image url
 print("The image URL is https:" + comicUrl)
